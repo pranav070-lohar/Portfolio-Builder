@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body onload="loadPortfolio()">
+
+  <div class="header">
+    <div class="logo">Port<span>folio</span></div>
+    
+    <!-- Hamburger Button -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  
+    <div class="navbar" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="create.html">Create</a>
+      <a href="view.html">View</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  
+
+<!-- NEW: Container -->
+<div class="view-container">
+
+  <div class="profile-card" id="profileCard">
+    <img src="uploads/default.png" alt="Profile Image" class="profile-img" id="profileImage">
+
+    <h2 id="nameDisplay">Name Here</h2>
+    <h4 id="professionDisplay">Profession Here</h4>
+
+    <div class="profile-section">
+      <h3>About</h3>
+      <p id="aboutDisplay"></p>
+    </div>
+
+    <div class="profile-section">
+      <h3>Skills</h3>
+      <p id="skillsDisplay"></p>
+    </div>
+
+    <div class="profile-section">
+      <h3>Projects</h3>
+      <p id="projectsDisplay"></p>
+    </div>
+
+    <div class="profile-section">
+      <h3>Contact</h3>
+      <p id="contactDisplay"></p>
+    </div>
+
+    <button onclick="downloadPortfolio()" class="btn download-btn">Download as PDF</button>
+    <button onclick="deletePortfolio()" class="btn delete-btn" style="background: #d90429; margin-top: 10px;">Delete Portfolio</button>
+
+  </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<footer>
+  &copy; 2025 Pranav Ganesh Lohar
+</footer>
+
+</body>
+</html>

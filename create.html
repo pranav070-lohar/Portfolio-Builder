@@ -1,0 +1,68 @@
+<!-- create.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Portfolio | My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('portfolio-img.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+
+    <div class="header">
+        <div class="logo">Port<span>folio</span></div>
+        
+        <!-- Hamburger Button -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+      
+        <div class="navbar" id="navbar">
+          <a href="index.html">Home</a>
+          <a href="create.html">Create</a>
+          <a href="view.html">View</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+<div class="container">
+  <h2>Create Your Portfolio</h2>
+  <form id="portfolioForm">
+
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="text" id="profession" placeholder="Profession" required>
+    <textarea id="about" placeholder="About You..." required></textarea>
+    <input type="text" id="skills" placeholder="Skills (comma-separated)" required>
+    <input type="text" id="projects" placeholder="Projects (comma-separated)">
+    <input type="text" id="contact" placeholder="Contact Information" required>
+
+    <label>Upload Profile Image:</label>
+    <input type="file" id="profileImageInput" accept="image/*">
+
+    <label>Select Theme:</label>
+    <select id="theme" required>
+      <option value="default">Default</option>
+      <option value="dark">Dark Mode</option>
+      <option value="blue">Blue Theme</option>
+      <option value="golden">Golden Theme</option>
+    </select>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <button type="submit" class="btn">Save Portfolio</button>
+    </div>
+  </form>
+</div>
+
+<footer>
+  &copy; 2025 Pranav Ganesh Lohar
+</footer>
+
+</body>
+</html>
